@@ -1,0 +1,42 @@
+  <!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">   
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <title>Prova</title>
+</head>
+<body>
+        <form action="/novo" method="post">
+        <h1>Adicionar novo ponto</h1>
+          <input type="text" name="id" placeholder="ID"/>
+          <input type="number" name="x" placeholder="X"/>
+          <input type="number" name="y" placeholder="Y"/>
+          <input type="number" name="z" placeholder="Z"/>
+          <input type="number" name="r" placeholder="R"/>
+          <input type="submit" value="Enviar"/>
+        </form>
+        <form action="/pegar_caminho/<name>" method="get">
+            <h1>Buscar caminho</h1>
+            <input type="text" name="name" placeholder="Insira o ID"/>
+            <input type="submit" value="Enviar"/>
+        </form>
+        <form action="/listas_caminhos" method="get">
+            <h1>Listar pontos</h1>
+            <input type="submit" value="Enviar"/>
+        </form>
+        <form action="/atualizar" method="post">
+            <h1>Atualizar ponto</h1>
+            <input type="text" name="idEdit" placeholder="ID"/>
+            <input type="number" name="x" placeholder="X"/>
+            <input type="number" name="y" placeholder="Y"/>
+            <input type="number" name="z" placeholder="Z"/>
+            <input type="number" name="r" placeholder="R"/>
+            <input type="submit" value="Enviar"/>
+        </form>
+        <form action="/deletar" method="post">
+            <h1>Deletar ponto</h1>
+            <input type="text" name="idDelete" placeholder="ID"/>
+            <input type="submit" value="Enviar"/>
+        </form>
+</body>
+</html>
